@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PartnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/product/editImage/{product_id}','App\Http\Controllers\ProductController@editImage')->name('product.editImage');
     Route::get('/product/deleteImage/{product_image_id}','App\Http\Controllers\ProductController@deleteImage')->name('product.deleteImage');
     Route::post('/storeImage','App\Http\Controllers\ProductController@storeImage')->name('product.storeImage');
+
+    //Partner
+    Route::get('/partner','App\Http\Controllers\PartnerController@index')->name('partner.index');
+    Route::post('partner', [PartnerController::class, 'store'])->name('partner.store');
+    Route::get('/getAllPartners','App\Http\Controllers\PartnerController@getAllPartners')->name('partner.getAll');
+    Route::get('/partner/{id}', [PartnerController::class, 'getDataById'])->name('partner.getById');
+    Route::put('/partner/{id}', [PartnerController::class, 'update'])->name('partner.update');
+    Route::delete('/partner/{id}', [PartnerController::class, 'destroy'])->name('partner.destroy');
 });
 
 //Customer

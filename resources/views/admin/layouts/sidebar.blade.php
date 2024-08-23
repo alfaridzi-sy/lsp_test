@@ -76,6 +76,12 @@
                         <i class="fas fa-list-alt text-success"></i> Data Produk
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/partner">
+                        <i class="fas fa-handshake text-info"></i> Data Rekanan
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
