@@ -11,7 +11,9 @@
     @section('content')
         <section class="fruit_section mt-5">
             <div class="container">
-                <h2>Tentang Kami</h2>
+                <h2 class="font-weight-bold">
+                    Tentang Kami
+                </h2>
                 <div class="text-center mb-4">
                     <img src="https://koperasi.kulonprogokab.go.id/files/news/normal/931eafb169f7af4023ad7eb39166a257.jpg"
                         alt="UMKM2M Siantar Marimbun" class="img-fluid rounded-circle w-50">

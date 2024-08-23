@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
             <a class="navbar-brand" href="javascript:void(0);">
                 {{-- <img src="{{ asset('customer/images/pemko.png') }}" alt="" /> --}}
-                <img src="{{ asset('master/assets/img/pemko.png') }}" >
+                <img src="{{ asset('master/assets/img/pemko.png') }}">
                 <span>
                     UMKM2M Siantar Marimbun
                 </span>
@@ -17,16 +17,20 @@
                 <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav  ">
                         <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('customer.beranda') }}">Beranda <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ route('customer.beranda') }}">Beranda <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ route('customer.productList') }}"> Produk</a>
+                            <a class="nav-link" href="{{ route('customer.productList') }}"> Produk</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ route('customer.about') }}"> Tentang </a>
+                            <a class="nav-link" href="{{ route('customer.about') }}"> Tentang </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ route('customer.contactList') }}">Hubungi Kami</a>
+                            <a class="nav-link" href="{{ route('customer.contactList') }}">Hubungi Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('customer.partnerList') }}">Kemitraan</a>
                         </li>
                     </ul>
                 </div>

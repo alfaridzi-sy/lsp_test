@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\Partner;
 
 class FrontEndController extends Controller
 {
@@ -25,5 +26,10 @@ class FrontEndController extends Controller
 
     public function about(){
         return view('customer.about');
+    }
+
+    public function partnerList(){
+        $partners = Partner::all();
+        return view('customer.partner', ["partners" => $partners]);
     }
 }

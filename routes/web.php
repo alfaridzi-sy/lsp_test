@@ -63,5 +63,6 @@ Route::prefix('customer')->group(function () {
     Route::get('/productList', [FrontEndController::class, 'productList'])->name('customer.productList');
     Route::get('/contactList', [FrontEndController::class, 'contactList'])->name('customer.contactList');
     Route::get('/about', [FrontEndController::class, 'about'])->name('customer.about');
+    Route::get('/partnerList', [FrontEndController::class, 'partnerList'])->name('customer.partnerList');
 });
 
